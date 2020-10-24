@@ -29,11 +29,29 @@
       <br>
 
     <div class="row">
-        <div class="col-sm-4">Instagram Feed
-        <p> this is sdjfadklgjhdslk.ghak;kjga;gjf;adsjaj;</p> 
+        <div class="col-sm-4">
+        <h2>Instagram Feed</h2>
+        <div id="instafeed-container"></div>
+        <style type="text/css">
+          a img{ 
+            width: 25%;
+          }
+        </style>
+            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+            var userFeed = new Instafeed({
+              get: 'user',
+              target: "instafeed-container",
+              resolution: 'low_resolution',
+              accessToken: 'IGQVJYdFBhZAl96cmVrUUlmTUljWjQxWWduNHpVbk9aWHYzN0pPYnZA3Q19YaFR2QU1hZA0ZAqUlhpcW5odWxuOW1Oa2tYLTl1Wnk5VWJIV2pBQVJVLU5ISF96LW5SOW5JXzJ0czNGVXVxUzhxMlpwMEpCVAZDZD'
+            });
+            userFeed.run();
+            </script>
+
+        <!--
         <script src="https://apps.elfsight.com/p/platform.js" defer> </script> 
-        <div class="elfsight-app-b64ce40d-bce5-4dda-95dd-a31e18352321"></div>
-    </div>
+        <div class="elfsight-app-b64ce40d-bce5-4dda-95dd-a31e18352321"></div> -->
+    </div> 
     
     <div class="col-sm-4">Merch
         <p> this is sdjfadklgjhdslk.ghak;kjga;gjf;adsjaj;</p> 
