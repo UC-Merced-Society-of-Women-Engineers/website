@@ -10,6 +10,12 @@
 </head>
 
 <body>
+  <style>
+     body {
+    background-color: rgba(204, 204, 255)
+  }
+  </style>
+ 
     
     <div class="container-fluid">
         <h1>UC Merced Society of Women Engineers</h1>
@@ -28,37 +34,41 @@
       <br>
       <br>
 
-    <div class="row">
+    
+    
         <div class="col-sm-4">
         <h2>Instagram Feed</h2>
         <div id="instafeed-container"></div>
         <style type="text/css">
           a img{ 
-            width: 25%;
+            width: 33%;
           }
+          
         </style>
             <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
             <script type="text/javascript">
-            var userFeed = new Instafeed({
+              var userFeed = new Instafeed({
               get: 'user',
               target: "instafeed-container",
               resolution: 'low_resolution',
               accessToken: 'IGQVJYdFBhZAl96cmVrUUlmTUljWjQxWWduNHpVbk9aWHYzN0pPYnZA3Q19YaFR2QU1hZA0ZAqUlhpcW5odWxuOW1Oa2tYLTl1Wnk5VWJIV2pBQVJVLU5ISF96LW5SOW5JXzJ0czNGVXVxUzhxMlpwMEpCVAZDZD'
             });
             userFeed.run();
-            </script>
+          </script>
 
-        <!--
+        <!-- old widget 
         <script src="https://apps.elfsight.com/p/platform.js" defer> </script> 
         <div class="elfsight-app-b64ce40d-bce5-4dda-95dd-a31e18352321"></div> -->
     </div> 
     
-    <div class="col-sm-4">Merch
+    <div class="col-sm-4">
+      <h2>Merch</h2>
         <p> this is sdjfadklgjhdslk.ghak;kjga;gjf;adsjaj;</p> 
         <img src="assets/logoresized.png" class="img-rounded" alt="logo" width="400" height="400"> 
     </div>
 
-    <div class="col-sm-4">Calendar/Events 
+    <div class="col-sm-4">
+      <h2>Calendar/Events </h2>
         <p> this is sdjfadklgjhdslk.ghak;kjga;gjf;adsjaj;</p> 
         <img src="assets/logoresized.png" class="img-rounded" alt="logo" width="400" height="400"> 
         <p> join our mailing list</p> 
