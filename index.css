@@ -1,13 +1,45 @@
+/* background specs */
 html, body {
-  background-color: #6F6A85;
+  background-color: #CCCCFF;
   font-family: "Trebuchet MS", Helvetica, sans-serif ;
   min-width: 630px;
 }
 
 * html body {
+  background-color: #CCCCFF;
   overflow: hidden;
 }
 
+/* navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #D8B5FF;
+}
+
+.topnav a{
+  float: right;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:underline;
+  font-size: 20px;
+}
+
+.topnav-right a:hover {
+  background-color:#F8EEDB;
+  color: rgb(237, 38, 255);
+}
+
+.topnav-right a.active {
+  background-color: rgb(117, 46, 248);
+  color: white;
+}
+
+.topnav-right {
+  float:right;
+}
+
+/* footer specs */
 * html #footer-wrapper {
   float: left;
   position: relative;
@@ -17,30 +49,35 @@ html, body {
   background: #827F91;
 }
 
+#footer {
+  clear: both;
+  position: relative;
+}
+
 * html #left {
   left: 150px;
 }
  
 p {
-  max-width: 65%;
-  min-width: 500px;
+  padding-top: 10px;
+  font-size: medium;
 }
  
-h2 {
+/* h2 {
   text-align: center;
   font-size: 2.6rem;
-}
+} */
  
-div {
+/* div {
   padding-right: 43px;
   height: 100%;
   width: 100%;
-}
+} */
  
-video {
+/* video {
   background-color: #A52A2A;
   border: 2px solid blue;
-}
+} */
 
 img.sticky {
   position: -webkit-sticky;
@@ -49,8 +86,9 @@ img.sticky {
   max-width: 40%;
 }
 
+/* collapsible textboxes */
 .collapsible {
-  background-color: rgb(117, 46, 248);
+  background-color: #D8B5FF;
   color: #F6F0ED;
   cursor: pointer;
   padding: 18px;
@@ -62,15 +100,15 @@ img.sticky {
 }
 
 .active, .collapsible:hover{
-  background-color:rgb(241, 213, 120);
-  color: rgb(237, 38, 255);
+  background-color: #F8EEDB;
+  color: #246EF9;
 }
 
-.content {
+.contents {
   padding: 18px;
   display: none;
   /* overflow: hidden; */
-  background-color: #827F91;
+  background-color: #D8B5FF;
   color: #F6F0ED;
 }
 
@@ -105,10 +143,7 @@ img.sticky {
   padding: 0 10px;
 }
 
-#footer {
-  clear: both;
-  position: relative;
-}
+
 
 .intro {
   display: flex;
@@ -130,14 +165,13 @@ img.sticky {
   min-width: 75%;
 }
  
-.nav {
+/* .nav {
   background-color: #F6F0ED;
   padding-left: 15px;
   padding-right: 15px;
-  /* max-width: 24%; */
   max-width: 140px;
-  /* flex: 1; */
-}
+
+} */
  
 /* .nav h1 {
   padding-left: 20px;
