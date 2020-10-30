@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head><link rel="stylesheet" type="text/css"href="main.css"/>
-  <!-- Add the title of your document below-->
   <title>SWE_Website</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div id="header"></div>
+  <div id="header">
+    <style>
+      body {
+     background-color: rgba(204, 204, 255)
+   }
+   .topnav{
+         overflow: hidden;
+         background-color: rgb(181, 138, 221);
+       }
+       .topnav a{
+         float:left;
+         color:rgb(255, 255, 255);
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration:underline;
+         font-size: 20px;
+       }
+      
+       .topnav-right a:hover {
+         background-color:rgb(241, 213, 120);
+         color: rgb(237, 38, 255);
+       }
+       .topnav-right a.active {
+         background-color: rgb(117, 46, 248);
+         color: white;
+       }
+       
+       .topnav-right {
+         float:right;
+       }
+ 
+   </style>
+   <nav></nav>
+   </head>
+   <div class="topnav">
+     <div class ="topnav-right">
+         <a class="active" href="#aboutus">About Us</a>
+         <a href="#events">Events</a>
+         <a href="#contact">Contact</a>
+         <a href="#getinvolved">Get Involved</a>
+       </div>
+     </div>
+  </div>
 
   <!-- this is the main section of the SWE_Website -->
   <div id="container">
@@ -98,18 +142,67 @@
         
         
         
-        <iframe width="560" height="315" src="https://youtu.be/TDE9KqB95MI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-        <p> Here is a placeholder video about why you should join WE local.</p>
+        <div class="container-fluid">
+          <h1>UC Merced Society of Women Engineers</h1>
+         
+          <!--<p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>-->
+        </div>
+      <div class="container">
+         <h2> Check out our last video</h2>
+          <p>November 7-9, 2019 - WE19 National SWE Conference @ Anaheim Convention Center</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dE8jqyJfUnk"></iframe>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dE8jqyJfUnk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </div>
+        
+        <br>
+        <br>
+      
+          <div class="col-sm-4">
+          <h2>Instagram Feed</h2>
+          <div id="instafeed-container"></div>
+          <style type="text/css">
+            a img{ 
+              width: 33%;
+            }
+            
+          </style>
+              <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+              <script type="text/javascript">
+                var userFeed = new Instafeed({
+                get: 'user',
+                target: "instafeed-container",
+                resolution: 'low_resolution',
+                accessToken: 'IGQVJYdFBhZAl96cmVrUUlmTUljWjQxWWduNHpVbk9aWHYzN0pPYnZA3Q19YaFR2QU1hZA0ZAqUlhpcW5odWxuOW1Oa2tYLTl1Wnk5VWJIV2pBQVJVLU5ISF96LW5SOW5JXzJ0czNGVXVxUzhxMlpwMEpCVAZDZD'
+              });
+              userFeed.run();
+            </script>
+  
+          <!-- old widget 
+          <script src="https://apps.elfsight.com/p/platform.js" defer> </script> 
+          <div class="elfsight-app-b64ce40d-bce5-4dda-95dd-a31e18352321"></div> -->
+      </div> 
+      
+      <div class="col-sm-4">
+        <h2>Merch</h2>
+          <p> Stay tuned for our club tshirts!</p> 
+         <img src="assets/tshirts.gif" class="img-rounded" alt="club tshirts" width=80% height=80% >
+      </div>
+  
+      <div class="col-sm-4">
+        <h2>Calendar/Events </h2>
+          <p> this is sdjfadklgjhdslk.ghak;kjga;gjf;adsjaj;</p> 
+          <img src="assets/logoresized.png" class="img-rounded" alt="logo" width="400" height="400"> 
+          <p> join our mailing list</p> 
+          <img src="assets/logoresized.png" class="img-rounded" alt="logo" width="400" height="400">  
+      </div>
+    
+    </div>
+  </div>
       </div>
     </div>
     <div id="left" class="column">
-      <!-- <div class="nav">
-        <h2>SWE MERCED</h2>
-        <li>About Us</li>
-        <li>Events</li>
-        <li>Contact</li>
-        <li>Get Involved</li>
-      </div> -->
     </div>
     <div id="right" class="column">
 
