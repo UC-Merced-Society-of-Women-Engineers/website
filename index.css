@@ -50,11 +50,11 @@ img.sticky {
 }
 
 .collapsible {
-  background-color: #827F91;
+  background-color: rgb(117, 46, 248);
   color: #F6F0ED;
   cursor: pointer;
   padding: 18px;
-  width: 75%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -62,7 +62,8 @@ img.sticky {
 }
 
 .active, .collapsible:hover{
-  background-color: #5B5478;
+  background-color:rgb(241, 213, 120);
+  color: rgb(237, 38, 255);
 }
 
 .content {
@@ -145,4 +146,9 @@ img.sticky {
 img.resize {
   max-width: 10%;
   max-height: 10%;
+}
+
+.embed-responsive-item {
+  max-width: 75%;
+  max-height: 75%;
 }
