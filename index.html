@@ -1,100 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>SWE_Website</title>
+  <title>UCM SWE • Homepage</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <style>
-  body {
-    margin: 0;
-    background-color: #CCCCFF;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-  }
-  .topnav{
-    overflow: hidden;
-    background-color: #D8B5FF;
-  }
-  .topnav a{
-    float:left;
-    color:rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:underline;
-    font-size: 20px;
-  }
-  
-  .topnav-right a:hover {
-    background-color:rgb(241, 213, 120);
-    color: rgb(237, 38, 255);
-  }
-  .topnav-right a.active {
-    background-color: rgb(117, 46, 248);
-    color: white;
-  }
-  
-  .topnav-right {
-    float:right;
-  }
 
-  .topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-  </style>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
-  <!-- header elements: navigation bar and logo -->
-  <div class="topnav">
-    <div class ="topnav-right">
-        <a class="active" href="#aboutus">About Us</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
-        <a href="#getinvolved">Get Involved</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+  
+  <div class="parent">
+    <!-- navigation bar -->
+    <div class="header">
+      <ul>
+        <li><a href="get_involved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li style="float:left"><a class="active" href="index.html">Home</a></li>
+      </ul>
     </div>
-
-  <!-- main content -->
+    <!-- main content -->
   <div id="container">
     <!-- ...where most of the content goes -->
     <div id="center" class="column">
+      
       <div class="main">
-        <!-- Add your headings, paragraphs, images and videos in the space below in this main class-->
-        <!-- <font color="white"><h2> Welcome to the UC Merced SWE Homepage </h2></font> -->
         <div class="intro">
           <img class="sticky" src="assets/LinkedIn WorkShop Recap.png" alt="Latest Image"/>
 
@@ -214,6 +151,10 @@
     </div>
   </div>
 
+  </div>
+  
+
+  
   <!-- <div id="left" class="column"></div>
   <div id="right" class="column"></div> -->
   </div>
@@ -239,17 +180,5 @@
     }
   </script>
 
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-
 </body>
 </html>
- 

@@ -1,0 +1,22 @@
+/* universal styling */
+body {
+    margin: 0;
+    background-color: #CCCCFF;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
+.under_construction {
+    display: grid;
+    place-items: center;
+}
